@@ -32,3 +32,64 @@ body{
     height: 100%;
     z-index: -1;
  }
+
+ .container{
+    width: 380px;
+    padding: 40px;
+    background-color: var(--cor-container);
+    box-shadow: 0 10px 30px rgba (0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid var(--cor-borda);
+ }
+
+ h1{
+    font-weight: 600;
+    margin-bottom: 8px;
+ }
+
+ .subtitulo{
+    color : var(--cor-texto-secundario);
+    margin-top: 0;
+    margin-bottom: 30px;
+ }
+
+ input, button{
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    transition: all 0.3 ease;
+ }
+
+ input:focus{
+    outline:focus;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 5px rgba (0, 123, 255, 0.5);
+ }
+
+ button{
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: var(--cor-primaria);
+    border: none;
+ }
+
+ button:hover{
+    opacity: 0.85;
+ }
+
+ #resultado{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    min-height: 25px;
+    color: var(--cor-primaria);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+ }
